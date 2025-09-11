@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+
+  /* Neutral */
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #d4d3d9;
+  --color-neutral-300: #acacb7;
+  --color-neutral-600: #3c385e;
+  --color-neutral-700: #302f4a;
+  --color-neutral-800: #262540;
+  --color-neutral-900: #02012c;
+
+  /* Orange */
+  --color-orange-500: #ff820a;
+
+  /* Blue */
+  --color-blue-500: #4658d9;
+  --color-blue-700: #2b19c9;
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Bricolage Grotesque", sans-serif;
+
+  /* Text Preset 1 - DM Sans, SemiBold Italic */
+  --text-7xl: 6rem; /* 96px */
+  --text-7xl--line-height: 1; /* 100% */
+  --text-7xl--letter-spacing: -0.125rem; /* -2px */
+  --text-7xl--font-weight: 600;
+
+  /* Text Preset 2 - Bricolage Grotesque, Bold */
+  --text-4xl: 3.25rem; /* 52px */
+  --text-4xl--line-height: 1.2; /* 120% */
+  --text-4xl--letter-spacing: 0;
+  --text-4xl--font-weight: 700;
+
+  /* Text Preset 3 - DM Sans, Light */
+  --text-2xl: 2rem; /* 32px */
+  --text-2xl--line-height: 1; /* 100% */
+  --text-2xl--letter-spacing: 0;
+  --text-2xl--font-weight: 300;
+
+  /* Text Preset 4 - DM Sans, Bold */
+  --text-xl: 1.75rem; /* 28px */
+  --text-xl--line-height: 1.2; /* 120% */
+  --text-xl--letter-spacing: 0;
+  --text-xl--font-weight: 700;
+
+  /* Text Preset 5 - DM Sans, SemiBold */
+  --text-lg: 1.25rem; /* 20px */
+  --text-lg--line-height: 1.2; /* 120% */
+  --text-lg--letter-spacing: 0;
+  --text-lg--font-weight: 600;
+
+  /* Text Preset 6 - DM Sans, Medium */
+  --text-base: 1.125rem; /* 18px */
+  --text-base--line-height: 1.2; /* 120% */
+  --text-base--letter-spacing: 0;
+  --text-base--font-weight: 500;
+
+  /* Text Preset 7 - DM Sans, Medium */
+  --text-sm: 1rem; /* 16px */
+  --text-sm--line-height: 1.2; /* 120% */
+  --text-sm--letter-spacing: 0;
+  --text-sm--font-weight: 500;
+
+  /* Text Preset 8 - DM Sans, Medium */
+  --text-xs: 0.875rem; /* 14px */
+  --text-xs--line-height: 1.2; /* 120% */
+  --text-xs--letter-spacing: 0;
+  --text-xs--font-weight: 500;
+}
+
+@layer base {
+  body {
+    @apply bg-neutral-900 text-neutral-100;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-neutral-600 bg-neutral-800;
+  }
+}
