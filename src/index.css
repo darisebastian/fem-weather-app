@@ -74,7 +74,7 @@
 
 @layer base {
   body {
-    @apply bg-neutral-900 text-neutral-100;
+    @apply bg-neutral-900 text-base text-neutral-100;
   }
 }
 
